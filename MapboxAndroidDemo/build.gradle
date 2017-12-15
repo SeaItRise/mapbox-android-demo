@@ -73,7 +73,7 @@ android {
 dependencies {
 
     // Wearable application module
-    //gpservicesWearApp project(':MapboxAndroidWearDemo')
+    gpservicesWearApp project(':MapboxAndroidWearDemo')
 
     // Support libraries
     implementation dependenciesList.supportGridLayout

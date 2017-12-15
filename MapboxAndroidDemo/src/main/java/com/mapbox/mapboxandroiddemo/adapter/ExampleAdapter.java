@@ -53,13 +53,13 @@ public class ExampleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
   @Override
   public int getItemViewType(int position) {
-    if (((MainActivity) context).getCurrentCategory() == R.id.nav_lab && position == 0) {
-      return 1;
-    } else if (((MainActivity) context).getCurrentCategory() == R.id.nav_mas && position == 0) {
+/*    if (((MainActivity) context).getCurrentCategory() == R.id.nav_lab && position == 0) {
+      return 1;}*/
+/*    } else if (((MainActivity) context).getCurrentCategory() == R.id.nav_mas && position == 0) {
       return 2;
     } else if (((MainActivity) context).getCurrentCategory() == R.id.nav_query_map && position == 0) {
       return 3;
-    }
+    }*/
     return 0;
   }
 

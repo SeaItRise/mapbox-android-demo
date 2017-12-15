@@ -70,13 +70,13 @@ public class StaticImageActivity extends AppCompatActivity {
 
     Picasso.with(this).load(londonStaticImage.getUrl().toString()).into(londonImageView);
     banner = (CardView) findViewById(R.id.banner);
-    banner.setOnClickListener(new View.OnClickListener() {
+/*    banner.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         Intent intent = new Intent(StaticImageActivity.this, MainActivity.class);
         intent.putExtra(MainActivity.EXTRA_NAV, R.id.nav_snapshot_image_generator);
         startActivity(intent);
       }
-    });
+    });*/
   }
 }

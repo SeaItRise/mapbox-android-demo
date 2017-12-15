@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
   private ArrayList<ExampleItemModel> exampleItemModel;
   private ExampleAdapter adapter;
-  private int currentCategory = R.id.nav_basics;
+  private int currentCategory = R.id.nav_styles;
   private RecyclerView recyclerView;
   private Switch analyticsOptOutSwitch;
   private boolean loggedIn;
@@ -156,24 +156,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     if (savedInstanceState != null) {
       currentCategory = savedInstanceState.getInt("CURRENT_CATEGORY");
       listItems(currentCategory);
-    } else if (getIntent().getIntExtra(EXTRA_NAV, -1) == R.id.nav_snapshot_image_generator) {
+    } /*else if (getIntent().getIntExtra(EXTRA_NAV, -1) == R.id.nav_snapshot_image_generator) {
       currentCategory = R.id.nav_snapshot_image_generator;
       listItems(R.id.nav_snapshot_image_generator);
-    } else {
-      listItems(R.id.nav_basics);
+    } */else {
+      listItems(R.id.nav_styles);
     }
 
     ItemClickSupport.addTo(recyclerView).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
       @Override
       @AddTrace(name = "onItemClicked")
       public void onItemClicked(RecyclerView recyclerView, int position, View view) {
-        if (currentCategory == R.id.nav_lab && position == 0) {
+        /*if (currentCategory == R.id.nav_lab && position == 0) {
           return;
         } else if (currentCategory == R.id.nav_mas && position == 0) {
           return;
         } else if (currentCategory == R.id.nav_query_map && position == 0) {
           return;
-        }
+        }*/
         startActivity(exampleItemModel.get(position).getActivity());
 
         analytics.clickedOnIndividualExample(getString(exampleItemModel.get(position).getTitle()), loggedIn);
@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
     if (navigationView != null) {
       navigationView.setNavigationItemSelectedListener(this);
-      navigationView.setCheckedItem(R.id.nav_basics);
+      navigationView.setCheckedItem(R.id.nav_styles);
     }
 
     loggedIn = PreferenceManager.getDefaultSharedPreferences(getApplicationContext())
@@ -261,35 +261,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           new Intent(MainActivity.this, DefaultStyleActivity.class),
           R.string.activity_styles_default_url, false, BuildConfig.MIN_SDK_VERSION));
 
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_symbol_layer_title,
-          R.string.activity_styles_symbol_layer_description,
-          new Intent(MainActivity.this, SymbolLayerActivity.class),
-          R.string.activity_styles_symbol_layer_url, false, BuildConfig.MIN_SDK_VERSION));
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_symbol_layer_title,
+//          R.string.activity_styles_symbol_layer_description,
+//          new Intent(MainActivity.this, SymbolLayerActivity.class),
+//          R.string.activity_styles_symbol_layer_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_data_clusters_title,
+//          R.string.activity_styles_create_data_cluster_description,
+//          new Intent(MainActivity.this, GeoJsonClusteringActivity.class),
+//          R.string.activity_styles_create_cluster_data_points_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_line_layer_title,
+//          R.string.activity_styles_line_layer_description,
+//          new Intent(MainActivity.this, LineLayerActivity.class),
+//          R.string.activity_styles_line_layer_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_color_switcher_title,
+//          R.string.activity_styles_color_switcher_description,
+//          new Intent(MainActivity.this, ColorSwitcherActivity.class),
+//          R.string.activity_styles_color_switcher_url, false, BuildConfig.MIN_SDK_VERSION));
 
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_data_clusters_title,
-          R.string.activity_styles_create_data_cluster_description,
-          new Intent(MainActivity.this, GeoJsonClusteringActivity.class),
-          R.string.activity_styles_create_cluster_data_points_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_line_layer_title,
-          R.string.activity_styles_line_layer_description,
-          new Intent(MainActivity.this, LineLayerActivity.class),
-          R.string.activity_styles_line_layer_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_color_switcher_title,
-          R.string.activity_styles_color_switcher_description,
-          new Intent(MainActivity.this, ColorSwitcherActivity.class),
-          R.string.activity_styles_color_switcher_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_vector_source_title,
-          R.string.activity_styles_vector_source_description,
-          new Intent(MainActivity.this, VectorSourceActivity.class),
-          R.string.activity_styles_vector_source_url, false, BuildConfig.MIN_SDK_VERSION));
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_vector_source_title,
+//          R.string.activity_styles_vector_source_description,
+//          new Intent(MainActivity.this, VectorSourceActivity.class),
+//          R.string.activity_styles_vector_source_url, false, BuildConfig.MIN_SDK_VERSION));
 
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_styles_add_wms_source_title,
@@ -303,90 +303,90 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           new Intent(MainActivity.this, GeojsonLayerInStackActivity.class),
           R.string.activity_styles_geojson_layer_in_stack_url, false, BuildConfig.MIN_SDK_VERSION));
 
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_adjust_layer_opacity_title,
-          R.string.activity_styles_adjust_layer_opacity_description,
-          new Intent(MainActivity.this, AdjustLayerOpacityActivity.class),
-          R.string.activity_styles_adjust_layer_opacity_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_zoom_dependent_fill_color_title,
-          R.string.activity_styles_zoom_dependent_fill_color_description,
-          new Intent(MainActivity.this, ZoomDependentFillColorActivity.class),
-          R.string.activity_styles_zoom_dependent_fill_color_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_language_switch_title,
-          R.string.activity_styles_language_switch_description,
-          new Intent(MainActivity.this, LanguageSwitchActivity.class),
-          R.string.activity_styles_language_switch_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_show_hide_layer_title,
-          R.string.activity_styles_show_hide_layer_description,
-          new Intent(MainActivity.this, ShowHideLayersActivity.class),
-          R.string.activity_styles_show_hide_layer_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_mapbox_studio_title,
-          R.string.activity_styles_mapbox_studio_description,
-          new Intent(MainActivity.this, MapboxStudioStyleActivity.class),
-          R.string.activity_styles_mapbox_studio_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_styles_local_style_or_raster_source_title,
-          R.string.activity_styles_local_style_or_raster_source_description,
-          new Intent(MainActivity.this, LocalStyleSourceActivity.class),
-          R.string.activity_styles_local_style_or_raster_source_url, false, BuildConfig.MIN_SDK_VERSION
-        ));
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_style_image_source_title,
-          R.string.activity_style_image_source_description,
-          new Intent(MainActivity.this, ImageSourceActivity.class),
-          R.string.activity_style_image_source_url, false, BuildConfig.MIN_SDK_VERSION
-        ));
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_adjust_layer_opacity_title,
+//          R.string.activity_styles_adjust_layer_opacity_description,
+//          new Intent(MainActivity.this, AdjustLayerOpacityActivity.class),
+//          R.string.activity_styles_adjust_layer_opacity_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_zoom_dependent_fill_color_title,
+//          R.string.activity_styles_zoom_dependent_fill_color_description,
+//          new Intent(MainActivity.this, ZoomDependentFillColorActivity.class),
+//          R.string.activity_styles_zoom_dependent_fill_color_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_language_switch_title,
+//          R.string.activity_styles_language_switch_description,
+//          new Intent(MainActivity.this, LanguageSwitchActivity.class),
+//          R.string.activity_styles_language_switch_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_show_hide_layer_title,
+//          R.string.activity_styles_show_hide_layer_description,
+//          new Intent(MainActivity.this, ShowHideLayersActivity.class),
+//          R.string.activity_styles_show_hide_layer_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_mapbox_studio_title,
+//          R.string.activity_styles_mapbox_studio_description,
+//          new Intent(MainActivity.this, MapboxStudioStyleActivity.class),
+//          R.string.activity_styles_mapbox_studio_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_styles_local_style_or_raster_source_title,
+//          R.string.activity_styles_local_style_or_raster_source_description,
+//          new Intent(MainActivity.this, LocalStyleSourceActivity.class),
+//          R.string.activity_styles_local_style_or_raster_source_url, false, BuildConfig.MIN_SDK_VERSION
+//        ));
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_style_image_source_title,
+//          R.string.activity_style_image_source_description,
+//          new Intent(MainActivity.this, ImageSourceActivity.class),
+//          R.string.activity_style_image_source_url, false, BuildConfig.MIN_SDK_VERSION
+//        ));
         currentCategory = R.id.nav_styles;
         break;
-      case R.id.nav_extrusions:
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_extrusions_population_density_extrusions_title,
-          R.string.activity_extrusions_population_density_extrusions_description,
-          new Intent(MainActivity.this, PopulationDensityExtrusionActivity.class),
-          R.string.activity_extrusions_population_density_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_extrusions_catalina_marathon_extrusions_title,
-          R.string.activity_extrusions_catalina_marathon_extrusions_description,
-          new Intent(MainActivity.this, MarathonExtrusionActivity.class),
-          R.string.activity_extrusions_catalina_marathon_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_extrusions_adjust_extrusions_title,
-          R.string.activity_extrusions_adjust_extrusions_description,
-          new Intent(MainActivity.this, AdjustExtrusionLightActivity.class),
-          R.string.activity_extrusions_adjust_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_extrusions_indoor_3d_title,
-          R.string.activity_extrusions_indoor_3d_description,
-          new Intent(MainActivity.this, Indoor3DMapActivity.class),
-          R.string.activity_extrusions_indoor_3d_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        exampleItemModel.add(new ExampleItemModel(
-          R.string.activity_extrusions_rotate_extrusions_title,
-          R.string.activity_extrusions_rotate_extrusions_description,
-          new Intent(MainActivity.this, RotationExtrusionActivity.class),
-          R.string.activity_extrusions_rotate_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
-
-        currentCategory = R.id.nav_extrusions;
-        break;
+//      case R.id.nav_extrusions:
+////        exampleItemModel.add(new ExampleItemModel(
+////          R.string.activity_extrusions_population_density_extrusions_title,
+////          R.string.activity_extrusions_population_density_extrusions_description,
+////          new Intent(MainActivity.this, PopulationDensityExtrusionActivity.class),
+////          R.string.activity_extrusions_population_density_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
+////
+////        exampleItemModel.add(new ExampleItemModel(
+////          R.string.activity_extrusions_catalina_marathon_extrusions_title,
+////          R.string.activity_extrusions_catalina_marathon_extrusions_description,
+////          new Intent(MainActivity.this, MarathonExtrusionActivity.class),
+////          R.string.activity_extrusions_catalina_marathon_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
+////
+////        exampleItemModel.add(new ExampleItemModel(
+////          R.string.activity_extrusions_adjust_extrusions_title,
+////          R.string.activity_extrusions_adjust_extrusions_description,
+////          new Intent(MainActivity.this, AdjustExtrusionLightActivity.class),
+////          R.string.activity_extrusions_adjust_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
+////
+////        exampleItemModel.add(new ExampleItemModel(
+////          R.string.activity_extrusions_indoor_3d_title,
+////          R.string.activity_extrusions_indoor_3d_description,
+////          new Intent(MainActivity.this, Indoor3DMapActivity.class),
+////          R.string.activity_extrusions_indoor_3d_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        exampleItemModel.add(new ExampleItemModel(
+//          R.string.activity_extrusions_rotate_extrusions_title,
+//          R.string.activity_extrusions_rotate_extrusions_description,
+//          new Intent(MainActivity.this, RotationExtrusionActivity.class),
+//          R.string.activity_extrusions_rotate_extrusions_url, false, BuildConfig.MIN_SDK_VERSION));
+//
+//        currentCategory = R.id.nav_extrusions;
+//        break;
 
       case R.id.nav_plugins:
-        exampleItemModel.add(new ExampleItemModel(
+        /*exampleItemModel.add(new ExampleItemModel(
           R.string.activity_plugins_traffic_plugin_title,
           R.string.activity_plugins_traffic_plugin_description,
           new Intent(MainActivity.this, TrafficPluginActivity.class),
-          R.string.activity_plugins_traffic_plugin_url, false, BuildConfig.MIN_SDK_VERSION));
+          R.string.activity_plugins_traffic_plugin_url, false, BuildConfig.MIN_SDK_VERSION));*/
 
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_plugins_building_plugin_title,
@@ -415,7 +415,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         currentCategory = R.id.nav_plugins;
         break;
 
-      case R.id.nav_annotations:
+      /*case R.id.nav_annotations:
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_annotation_marker_title,
           R.string.activity_annotation_custom_marker_description,
@@ -465,9 +465,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           R.string.activity_annotation_animated_marker_url, false, BuildConfig.MIN_SDK_VERSION));
 
         currentCategory = R.id.nav_annotations;
-        break;
+        break;*/
 
-      case R.id.nav_camera:
+      /*case R.id.nav_camera:
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_camera_animate_title,
           R.string.activity_camera_animate_description,
@@ -530,8 +530,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           R.string.activity_query_click_on_layer_url, false, BuildConfig.MIN_SDK_VERSION));
 
         currentCategory = R.id.nav_query_map;
-        break;
-      case R.id.nav_mas:
+        break;*/
+      /*case R.id.nav_mas:
         exampleItemModel.add(null);
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_mas_simplify_polyline_title,
@@ -590,8 +590,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           R.string.activity_image_generator_snapshot_share_url
         ));
         currentCategory = R.id.nav_snapshot_image_generator;
-        break;
-      case R.id.nav_lab:
+        break;*/
+/*      case R.id.nav_lab:
         exampleItemModel.add(null);
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_labs_mapillary_title,
@@ -659,8 +659,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           R.string.activity_labs_gif_on_map_url, true, BuildConfig.MIN_SDK_VERSION
         ));
         currentCategory = R.id.nav_lab;
-        break;
-      case R.id.nav_dds:
+        break;*/
+      /*case R.id.nav_dds:
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_dds_style_circle_categorically_title,
           R.string.activity_dds_style_circle_categorically_description,
@@ -704,7 +704,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           R.string.activity_dds_multiple_geometries_url, false, BuildConfig.MIN_SDK_VERSION));
 
         currentCategory = R.id.nav_dds;
-        break;
+        break;*/
       default:
         exampleItemModel.add(new ExampleItemModel(
           R.string.activity_basic_simple_mapview_title,
@@ -724,7 +724,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
           new Intent(MainActivity.this, MapboxMapOptionActivity.class),
           R.string.activity_basic_mapbox_options_url, false, BuildConfig.MIN_SDK_VERSION));
 
-        currentCategory = R.id.nav_basics;
+        currentCategory = R.id.nav_styles;
         break;
     }
     adapter.notifyDataSetChanged();

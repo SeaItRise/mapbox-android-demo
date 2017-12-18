@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".examples.mas.MapMatchingActivity">
+    tools:context="com.sea_it_rise.mapboxandroiddemo.examples.mas.MapMatchingActivity">
 
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapView"

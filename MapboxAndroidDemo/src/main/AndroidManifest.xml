@@ -22,513 +22,513 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".examples.basics.SimpleMapViewActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.basics.SimpleMapViewActivity"
             android:label="@string/activity_basic_simple_mapview_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.basics.SupportMapFragmentActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.basics.SupportMapFragmentActivity"
             android:label="@string/activity_basic_support_map_frag_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.MapboxStudioStyleActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.MapboxStudioStyleActivity"
             android:label="@string/activity_styles_mapbox_studio_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.DefaultStyleActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.DefaultStyleActivity"
             android:label="@string/activity_styles_default_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.annotations.DrawMarkerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.DrawMarkerActivity"
             android:label="@string/activity_annotation_marker_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.annotations.DrawCustomMarkerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.DrawCustomMarkerActivity"
             android:label="@string/activity_annotation_custom_marker_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.annotations.DrawGeojsonLineActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.DrawGeojsonLineActivity"
             android:label="@string/activity_annotation_geojson_line_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.annotations.DrawPolygonActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.DrawPolygonActivity"
             android:label="@string/activity_annotation_polygon_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.camera.AnimateMapCameraActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.camera.AnimateMapCameraActivity"
             android:label="@string/activity_camera_animate_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.offline.SimpleOfflineMapActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.offline.SimpleOfflineMapActivity"
             android:label="@string/activity_offline_simple_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.offline.OfflineManagerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.offline.OfflineManagerActivity"
             android:label="@string/activity_offline_manager_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.mas.OptimizationActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.mas.OptimizationActivity"
             android:label="@string/activity_mas_optimization_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.mas.GeocodingActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.mas.GeocodingActivity"
             android:label="@string/activity_mas_geocoding_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.mas.StaticImageActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.mas.StaticImageActivity"
             android:label="@string/activity_mas_static_image_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.plugins.TrafficPluginActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.plugins.TrafficPluginActivity"
             android:label="@string/activity_plugins_traffic_plugin_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.plugins.LocationPluginActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.plugins.LocationPluginActivity"
             android:label="@string/activity_plugins_location_plugin_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.camera.BoundingBoxCameraActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.camera.BoundingBoxCameraActivity"
             android:label="@string/activity_camera_bounding_box_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
 
         <service android:name="com.mapbox.services.android.telemetry.service.TelemetryService" />
-        <service android:name=".account.AccountRetrievalService" />
+        <service android:name="com.sea_it_rise.mapboxandroiddemo.account.AccountRetrievalService" />
 
         <activity
-            android:name=".examples.basics.MapboxMapOptionActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.basics.MapboxMapOptionActivity"
             android:label="@string/activity_basic_mapbox_options_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.LocationPickerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.LocationPickerActivity"
             android:label="@string/activity_lab_location_picker_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.RecyclerViewOnMapActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.RecyclerViewOnMapActivity"
             android:label="@string/activity_lab_rv_on_map_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.RecyclerViewSymbolLayerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.RecyclerViewSymbolLayerActivity"
             android:label="@string/activity_lab_rv_symbol_layer_on_map_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.AnimatedImageSourceActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.AnimatedImageSourceActivity"
             android:label="@string/activity_labs_gif_on_map_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity"/>
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity"/>
         </activity>
         <activity
-            android:name=".examples.annotations.CustomInfoWindowActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.CustomInfoWindowActivity"
             android:label="@string/activity_annotation_custom_info_window_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.annotations.BasicMarkerViewActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.BasicMarkerViewActivity"
             android:label="@string/activity_annotation_marker_view_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.dds.MultipleGeometriesActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.dds.MultipleGeometriesActivity"
             android:label="@string/activity_dds_multiple_geometries_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.annotations.AnimatedMarkerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.AnimatedMarkerActivity"
             android:label="@string/activity_annotation_animated_marker_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.MarkerFollowingRouteActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.MarkerFollowingRouteActivity"
             android:label="@string/activity_lab_marker_following_route_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.PictureInPictureActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.PictureInPictureActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:label="@string/activity_lab_picture_in_picture_title"
             android:resizeableActivity="true"
             android:supportsPictureInPicture="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.SpaceStationLocationActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.SpaceStationLocationActivity"
             android:label="@string/activity_lab_space_station_location_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.mas.SimplifyPolylineActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.mas.SimplifyPolylineActivity"
             android:label="@string/activity_mas_simplify_polyline_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.mas.MapMatchingActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.mas.MapMatchingActivity"
             android:label="@string/activity_mas_map_matching_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.mas.DirectionsMatrixApiActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.mas.DirectionsMatrixApiActivity"
             android:label="@string/activity_mas_maxtrix_api_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.ShowHideLayersActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.ShowHideLayersActivity"
             android:label="@string/activity_styles_show_hide_layer_title">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.LanguageSwitchActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.LanguageSwitchActivity"
             android:label="@string/activity_styles_language_switch_title">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.ColorSwitcherActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.ColorSwitcherActivity"
             android:label="@string/activity_styles_color_switcher_title">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.AdjustLayerOpacityActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.AdjustLayerOpacityActivity"
             android:label="@string/activity_styles_adjust_layer_opacity_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.GeojsonLayerInStackActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.GeojsonLayerInStackActivity"
             android:label="@string/activity_styles_geojson_layer_in_stack_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.VectorSourceActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.VectorSourceActivity"
             android:label="@string/activity_styles_vector_source_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.ZoomDependentFillColorActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.ZoomDependentFillColorActivity"
             android:label="@string/activity_styles_zoom_dependent_fill_color_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.LocalStyleSourceActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.LocalStyleSourceActivity"
             android:label="@string/activity_styles_local_style_or_raster_source_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.query.QueryFeatureActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.query.QueryFeatureActivity"
             android:label="@string/activity_query_feature_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.dds.CreateHotspotsActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.dds.CreateHotspotsActivity"
             android:label="@string/activity_dds_create_hotspots_points_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.query.SelectBuildingActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.query.SelectBuildingActivity"
             android:label="@string/activity_query_select_building_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.query.FeatureCountActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.query.FeatureCountActivity"
             android:label="@string/activity_query_feature_count_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.query.ClickOnLayerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.query.ClickOnLayerActivity"
             android:label="@string/activity_query_click_on_layer_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.LineLayerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.LineLayerActivity"
             android:label="@string/activity_styles_line_layer_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.AddWmsSourceActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.AddWmsSourceActivity"
             android:label="@string/activity_styles_add_wms_source_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.SymbolLayerActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.SymbolLayerActivity"
             android:label="@string/activity_styles_symbol_layer_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.ImageSourceActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.ImageSourceActivity"
             android:label="@string/activity_style_image_source_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity"/>
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity"/>
         </activity>
         <activity
-            android:name=".labs.LosAngelesTourismActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.LosAngelesTourismActivity"
             android:label="@string/activity_lab_los_angeles_tourism_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.IndoorMapActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.IndoorMapActivity"
             android:label="@string/activity_lab_indoor_map_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".labs.InsetMapActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.labs.InsetMapActivity"
             android:label="@string/activity_labs_inset_map_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.dds.StyleCirclesCategoricallyActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.dds.StyleCirclesCategoricallyActivity"
             android:label="@string/activity_dds_style_circle_categorically_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.dds.ChoroplethZoomChangeActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.dds.ChoroplethZoomChangeActivity"
             android:label="@string/activity_dds_choropleth_zoom_change_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.styles.GeoJsonClusteringActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.styles.GeoJsonClusteringActivity"
             android:label="@string/activity_styles_data_clusters_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.dds.StyleLineIdentityPropertyActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.dds.StyleLineIdentityPropertyActivity"
             android:label="@string/activity_dds_style_line_identity_property_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.dds.ChoroplethJsonVectorMixActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.dds.ChoroplethJsonVectorMixActivity"
             android:label="@string/activity_dds_json_vector_mix_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.dds.AddRainFallStyleActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.dds.AddRainFallStyleActivity"
             android:label="@string/activity_dds_time_lapse_rainfall_points_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.camera.RestrictCameraActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.camera.RestrictCameraActivity"
             android:label="@string/activity_camera_restrict_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.plugins.BuildingPluginActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.plugins.BuildingPluginActivity"
             android:label="@string/activity_plugins_building_plugin_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.plugins.GeoJsonPluginActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.plugins.GeoJsonPluginActivity"
             android:label="@string/activity_plugins_geojson_plugin_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.plugins.MarkerClustersPluginActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.plugins.MarkerClustersPluginActivity"
             android:label="@string/activity_plugins_marker_clusters_plugin_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity"/>
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity"/>
         </activity>
         <activity
-            android:name=".examples.extrusions.PopulationDensityExtrusionActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.extrusions.PopulationDensityExtrusionActivity"
             android:label="@string/activity_extrusions_population_density_extrusions_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.annotations.PolygonHolesActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.annotations.PolygonHolesActivity"
             android:label="@string/activity_annotation_polygon_holes_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.extrusions.MarathonExtrusionActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.extrusions.MarathonExtrusionActivity"
             android:label="@string/activity_extrusions_catalina_marathon_extrusions_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.extrusions.AdjustExtrusionLightActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.extrusions.AdjustExtrusionLightActivity"
             android:label="@string/activity_extrusions_adjust_extrusions_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.extrusions.RotationExtrusionActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.extrusions.RotationExtrusionActivity"
             android:label="@string/activity_extrusions_rotate_extrusions_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.extrusions.Indoor3DMapActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.extrusions.Indoor3DMapActivity"
             android:label="@string/activity_extrusions_indoor_3d_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.snapshot.SnapshotShareActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.snapshot.SnapshotShareActivity"
             android:label="@string/activity_image_generator_snapshot_share_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
-            android:name=".examples.snapshot.SnapshotNotificationActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.examples.snapshot.SnapshotNotificationActivity"
             android:label="@string/activity_image_generator_snapshot_notification_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+                android:value="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.MainActivity" />
         </activity>
 
         <activity
-            android:name=".account.LandingActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.account.LandingActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -547,7 +547,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".account.LoadingActivity"
+            android:name="com.sea_it_rise.mapboxandroiddemo.account.LoadingActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 </manifest>

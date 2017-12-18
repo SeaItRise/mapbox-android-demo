@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".examples.styles.ColorSwitcherActivity">
+    tools:context="com.sea_it_rise.mapboxandroiddemo.examples.styles.ColorSwitcherActivity">
 
     <LinearLayout
         android:id="@+id/color_picker_content"

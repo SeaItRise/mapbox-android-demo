@@ -6,7 +6,7 @@
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              android:background="@color/mapboxWhite"
-                                             tools:context="com.mapbox.mapboxandroiddemo.account.LoadingActivity">
+                                             tools:context="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.account.LoadingActivity">
 
     <com.cunoraz.gifview.library.GifView
         android:id="@+id/imageView3"

@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapbox.mapboxandroiddemo.examples.dds.ChoroplethJsonVectorMixActivity">
+    tools:context="com.mapbox.mapboxandroiddemo.com.sea_it_rise.mapboxandroiddemo.examples.dds.ChoroplethJsonVectorMixActivity">
 
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapView"

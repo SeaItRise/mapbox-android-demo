@@ -11,6 +11,9 @@ import com.mapbox.mapboxsdk.constants.Style;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
+import com.mapbox.mapboxsdk.style.layers.RasterLayer;
+import com.mapbox.mapboxsdk.style.sources.RasterSource;
+import com.mapbox.mapboxsdk.style.sources.TileSet;
 
 /**
  * Use a variety of professionally designed styles with the Mapbox Android SDK.
@@ -37,8 +40,21 @@ public class DefaultStyleActivity extends AppCompatActivity {
       @Override
       public void onMapReady(MapboxMap mapboxMap) {
         DefaultStyleActivity.this.mapboxMap = mapboxMap;
+        mapboxMap = mapboxMap;
+        RasterSource webMapSource = new RasterSource(
+                "noaa-3ft-source",
+                            /*new TileSet("raster", "https://geodata.state.nj.us/imagerywms/Natural2015?bbox={"
+                                            + "bbox-epsg-3857}&format=image/png&service=WMS&version=1.1.1&request=GetMap&"
+                                            + "srs=EPSG:3857&width=256&height=256&layers=Natural2015"), 256);
+*/
+                new TileSet("raster","https://www.coast.noaa.gov/arcgis/rest/services/dc_slr/"
+                        + "conf_3ft/MapServer/tile/{z}/{y}/{x}"), 256);
 
-        // customize map with markers, polylines, etc
+        mapboxMap.addSource(webMapSource);
+
+        // Add the web map source to the map.
+        RasterLayer webMapLayer = new RasterLayer("noaa-3ft-layer", "noaa-3ft-source");
+        mapboxMap.addLayerBelow(webMapLayer, "aeroway-taxiway");// customize map with markers, polylines, etc
 
       }
     });
@@ -95,9 +111,11 @@ public class DefaultStyleActivity extends AppCompatActivity {
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
     // Handle item selection
+    //RasterLayer webMapLayer = new RasterLayer("noaa-3ft-layer", "noaa-3ft-source");
     switch (item.getItemId()) {
       case R.id.menu_streets:
         mapboxMap.setStyleUrl(Style.MAPBOX_STREETS);
+        //mapboxMap.addLayerBelow(webMapLayer, "aeroway-taxiway");
         return true;
       case R.id.menu_dark:
         mapboxMap.setStyleUrl(Style.DARK);
@@ -120,5 +138,7 @@ public class DefaultStyleActivity extends AppCompatActivity {
       default:
         return super.onOptionsItemSelected(item);
     }
+
+
   }
 }
